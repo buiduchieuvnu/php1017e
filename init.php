@@ -5,7 +5,7 @@
  * @since 18/11/2014
  */
 
-if ( !defined('AREA') ) { die('Access denied'); }
+//if ( !defined('AREA') ) { die('Access denied'); }
 session_regenerate_id();
 define('TIME', time());
 define('MICROTIME', microtime(true));

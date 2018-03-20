@@ -4,7 +4,7 @@
  * @version 1.0
  * @since 18/11/2014
  */
-if ( !defined('AREA') ) { die('Access denied'); }
+//if ( !defined('AREA') ) { die('Access denied'); }
 // bộ nhớ tối đa
 @ini_set('memory_limit', '48M');
 // thời gian tối đa thực hiện script

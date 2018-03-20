@@ -1,5 +1,5 @@
 <?php
-if ( !defined('AREA') ) { die('Access denied'); }
+//if ( !defined('AREA') ) { die('Access denied'); }
 
 /**
  * @author HieuBD

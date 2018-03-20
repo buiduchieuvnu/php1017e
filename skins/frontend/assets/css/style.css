@@ -1,0 +1,594 @@
+/*reset*/
+*{margin: 0;padding: 0}
+body{
+    background-color: #F1F1F1;
+    font: 14px/18px Arial,Helvetica,sans-serif;
+    color: #333;
+}
+
+a{
+    text-decoration: none;
+}
+
+.duong_bao{
+    width: 1000px;
+    margin: 0 auto; /*căn giữa nội dung*/
+}
+
+#dau_trang{
+    width: 100%;
+}
+
+#dau_trang .dong_1{
+    width: 100%;
+    background-color: #273896;
+    float:left;
+    min-height: 100px;
+}
+
+#dau_trang .dong_2{
+    width: 100%;
+    background-color: #F0161F;
+    float:left;
+    min-height: 30px;
+}
+
+#dau_trang .dong_1 .cot_1{
+    width: 220px;
+    height: 121px;
+    /* background-color: yellow;  */
+    float: left;
+}
+
+#dau_trang .dong_1 .cot_1 #logo{
+    width: 100%;
+    background-image: url(../../images/web/trananh@1x.png) ;
+    height: 41px;
+    margin-top: 38px;
+}
+
+#dau_trang .dong_1 .cot_2{
+    width: 350px;
+    height: 121px;
+    /*background-color: green;*/
+    float: left;
+}
+
+#dau_trang .dong_1 .cot_2 .chon_dia_diem{
+    width: 120px;
+    height: 42px;
+    background-color: #2B3DA4;
+    float: left;
+    margin-top: 35px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#dau_trang .dong_1 .cot_2 .tieude_1 a{
+    color: #8DBBCA;
+    font-size: 10px;
+}
+
+#dau_trang .dong_1 .cot_2 p.tieude_2{
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#dau_trang .dong_1 .cot_2 .ho_tro{
+    height: 42px;
+    margin-top: 35px;
+    margin-left: 10px;
+    float: left;
+}
+
+
+#dau_trang .dong_1 .cot_3{
+    /* width: 365px; */
+    height: 121px;
+/*    background-color: violet;*/
+    float: left;
+}
+
+#dau_trang .dong_1 .cot_3 ul#menu_tren{
+    margin-top: 15px;
+}
+
+#dau_trang .dong_1 .cot_3 ul#menu_tren li{
+    display: inline;
+}
+
+#dau_trang .dong_1 .cot_3 ul#menu_tren li a{
+    font-size: 10px;
+    color: #FFF;
+}
+#dau_trang .dong_1 .cot_3 ul#menu_tren li a:hover{
+    text-decoration: underline;
+}
+
+#dau_trang .dong_1 .cot_3 #tim_kiem{
+   width: 370px;
+   background-color: #FFF;
+   height: 40px;
+   margin-top: 15px;
+   margin-left: 15px;
+   border-radius: 5px;
+}
+
+#dau_trang .dong_1 .cot_3 #tim_kiem input{
+    padding: 5px;
+    width: 300px;
+    margin-top: 5px;
+    border: none;
+    float: left;
+}
+
+#dau_trang .dong_1 .cot_3 #tim_kiem .duong_vien{
+    height: 40px;
+    width: 2px;
+    float: left;
+    background-color: gray;
+}
+
+#dau_trang .dong_1 .cot_3 #tim_kiem .icon_timkiem{
+    width: 40px;
+    height: 17px;
+    margin-top: 11px;
+    background:url(../../images/web/trananh@1x.png) -207px 0px;
+    float: right;
+    border-radius: 5px;
+}
+
+#dau_trang .dong_2 #menu_chinh{
+    width: 245px;
+    height: 30px;
+    float: left;
+}
+
+#dau_trang .dong_2 #menu_chinh .ba_dongke {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 4px;
+    padding: 2px;
+    margin-left: 4px;
+}
+#dau_trang .dong_2 #menu_chinh .ba_dongke .dongke {
+    width: 20px;
+    height: 2px;
+    background: #FFF;
+    float: left;
+    margin: 2px;
+}
+
+#dau_trang .dong_2 #menu_chinh span{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px
+}
+
+
+#than_trang{
+    min-height: 400px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#than_trang .dong_1{
+    width: 100%;
+    float: left;
+    height: 356px;
+    margin-bottom: 10px;
+}
+
+#than_trang .dong_1 .cot_1{
+    width: 245px;
+    height: 366px;
+    float: left;
+    background: #FFF;
+    margin: 0px 5px 10px 0px;
+}
+
+#than_trang .dong_1 .cot_1 > ul > li{
+    display: block;
+    border-bottom: solid 1px #F0F0F0;
+    padding: 9px 10px;
+    float: left;
+    height: 27px;
+    width: 230px;
+}
+
+#than_trang .dong_1 .cot_1 ul li i.item_1{
+    width: 22px;
+    height:21px;
+    background: url(../../images/web/icondesktop@1x.v201712120926.png) 335px -154px;
+    float: left;
+}
+
+#than_trang .dong_1 .cot_1 ul li i.item_2{
+    width: 22px;
+    height: 21px;
+    background: url(../../images/web/icondesktop@1x.v201712120926.png) 313px -157px;
+    float: left;
+}
+
+#than_trang .dong_1 .cot_1 ul li i.item_3{
+    width: 22px;
+    height: 21px;
+    background: url(../../images/web/icondesktop@1x.v201712120926.png) 295px -157px;
+    float: left;
+}
+#than_trang .dong_1 .cot_1 ul li i.item_4{
+    width: 22px;
+    height: 21px;
+    background: url(../../images/web/icondesktop@1x.v201712120926.png) 271px -157px;
+    float: left;
+}
+#than_trang .dong_1 .cot_1 ul li i.item_5{
+    width: 22px;
+    height: 21px;
+    background: url(../../images/web/icondesktop@1x.v201712120926.png) 248px -157px;
+    float: left;
+}
+#than_trang .dong_1 .cot_1 ul li i.item_6{
+    width: 22px;
+    height: 21px;
+    background: url(../../images/web/icondesktop@1x.v201712120926.png) 227px -157px;
+    float: left;
+}
+#than_trang .dong_1 .cot_1 ul li i.item_7{
+    width: 22px;
+    height: 21px;
+    background: url(../../images/web/icondesktop@1x.v201712120926.png) 208px  -157px;
+    float: left;
+}
+#than_trang .dong_1 .cot_1 ul li i.item_8{
+    width: 22px;
+    height: 21px;
+    background: url(../../images/web/icondesktop@1x.v201712120926.png) 76px  -157px;
+    float: left;
+}
+#than_trang .dong_1 .cot_1 ul li i.item_9{
+    width: 22px;
+    height: 21px;
+    background: url(../../images/web/icondesktop@1x.v201712120926.png) 47px -157px;
+    float: left;
+}
+#than_trang .dong_1 .cot_1 ul li i.item_10{
+    width: 22px;
+    height: 21px;
+    background: url(../../images/web/icondesktop@1x.v201712120926.png) 161px -157px;
+    float: left;
+}
+
+#than_trang .dong_1 .cot_1 ul li .menu_con{
+    float: left;
+    position: relative;
+    top: -30px;
+    left: 234px;
+    background: #FFF;
+    display: none;  
+    padding: 5px;
+    width: 420px;
+}
+
+#than_trang .dong_1 .cot_1 ul.menu_chinh li:hover .menu_con{
+   display: block;
+}
+
+#than_trang .dong_1 .cot_1 ul.menu_chinh li .menu_con .cot{
+    width: 200px;
+    float: left;
+    margin: 2px;
+}
+
+#than_trang .dong_1 .cot_1 ul.menu_chinh li .menu_con .cot strong a{
+    width: 200px;
+    font-size: 14px;
+    color: #01AEF0;
+    float: left;
+    line-height: 24px;
+    border-bottom: 1px solid #DDD;
+}
+
+#than_trang .dong_1 .cot_1 ul.menu_chinh li .menu_con .cot  a{
+    width: 200px;
+    float: left;
+    line-height: 24px;
+    color: #333;
+    font-size: 12px;
+}
+
+#than_trang .dong_1 .cot_1 ul.menu_chinh li .menu_con .cot  a:hover{
+    color: #01AEF0;
+}
+
+#than_trang .dong_1 .cot_1 ul > li.li_cuoi{
+    border-bottom: none !important;
+}
+
+#than_trang .dong_1 .cot_1 ul > li:hover{
+    border-left: solid 2px #01AEF0;
+}
+
+#than_trang .dong_1 .cot_1 ul > li > a{
+    color:#333;
+}
+
+#than_trang .dong_1 .cot_1 ul li:hover a{
+    font-weight: bold;
+}
+
+#than_trang .dong_1 .cot_2{
+    width: 490px;
+    height: 356px;
+    float: left;
+    background: #FFF;
+    margin: 10px 5px 10px 5px;
+}
+
+#than_trang .dong_1 .cot_2 .anh_slide{
+    width: 490px;
+    height: 250px;
+}
+
+#than_trang .dong_1 .cot_2 .link_slide li{
+    display: inline;
+    width: 87px;
+    float: left;
+    padding: 5px;
+    border-right: 1px solid #F0F0F0;
+    text-align: center;
+}
+
+#than_trang .dong_1 .cot_2 .link_slide li a{
+    font-size: 12px;
+    color: #333;
+}
+
+#than_trang .dong_1 .cot_2 .link_slide li a:hover{
+    font-weight: bold;
+}
+
+#than_trang .dong_1 .cot_3{
+    width: 245px;
+    height: 356px;
+    float: left;
+    margin: 10px 0px 10px 5px;
+}
+
+#than_trang .dong_1 .cot_3 .dia_chi{
+    background: #fff;
+}
+
+#than_trang .dong_1 .cot_3 .dia_chi h2{
+    font-size: 14px;
+    padding: 10px;
+}
+
+#than_trang .dong_1 .cot_3 .dia_chi h2 a{color: #000}
+
+#than_trang .dong_1 .cot_3 .dia_chi .ds_sieu_thi li{
+    display: block;
+    font-size: 12px;
+    padding: 2px 10px;
+    color: #01AEF0;
+}
+
+#than_trang .dong_1 .cot_3 .dia_chi .ds_sieu_thi li i.icon_danhsach{
+    width: 16px;
+    height: 16px;
+    background: url(../../images/web/icondesktop@1x.v201712120926.png) -212px -98px;
+    float: left;
+    padding: 2px;
+}
+
+#than_trang .dong_1 .cot_3 .dia_chi .xem_them{
+        padding: 4px 0 8px 32px;
+}
+
+#than_trang .dong_1 .cot_3 .dia_chi .xem_them a{
+    font-size: 14px;
+    color: #01AEF0;
+}
+
+#than_trang .dong_1 .cot_3 .quang_cao ul li{
+    display: block;
+}
+
+#than_trang .dong_1 .cot_3 .quang_cao ul li img{
+    width: 245px;
+    margin-top: 10px;
+}
+
+#than_trang .dong_sanpham{
+    background: #FFF;
+    width: 100%;
+    height: 326px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#than_trang .dong_sanpham .danh_muc{
+    width: 100%;
+    float: left;
+    height: 40px;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+#than_trang .dong_sanpham .danh_muc h3{
+    width: 40px;    
+    float: left;
+    padding: 10px;
+    border-bottom: 2px solid #01AEF0;
+}
+#than_trang .dong_sanpham .danh_muc h3 a{
+    font-size: 18px;  
+}
+
+#than_trang .dong_sanpham .danh_muc ul li{
+    display: inline;
+    padding: 10px 6px;
+    float: left;
+}
+
+#than_trang .dong_sanpham .danh_muc ul li a{
+  color: #01AEF0;  
+}
+
+#than_trang .dong_sanpham .danh_muc .xem_them{
+    line-height: 39px;
+    color: #01AEF0;
+    font-weight: bold;
+    float: left;
+    padding-left: 7px;
+}
+
+
+#than_trang .dong_sanpham .danhsach_sanpham li{
+    display: inline;
+    width: 248px;
+    border-right: 1px solid #F0F0F0;
+    float: left;
+}
+
+#than_trang .dong_sanpham .danhsach_sanpham li .anh_sanpham{
+    max-width: 248px;
+    float: left;
+}
+
+#than_trang .dong_sanpham .danhsach_sanpham li .logo_hangsx{
+    max-height: 30px;
+    margin: 10px 10px 10px 5px;
+    float: left;
+}
+
+#than_trang .dong_sanpham .danhsach_sanpham li .loai_sanpham{
+    float: left;
+    border: dotted 2px #01AEF0;
+    padding: 2px;
+    margin: 10px 5px 10px 0px;
+}
+
+#than_trang .dong_sanpham .danhsach_sanpham li .ma_sanpham{
+    float: left;
+    margin: 10px 0px 10px 0px;
+    font-size: 11px;
+}
+
+#than_trang .dong_sanpham .danhsach_sanpham li .gia_sanpham{
+    font-size: 24px;
+    float: left;
+    color: red;
+    padding-left: 5px;
+}
+
+#than_trang .dong_sanpham .danhsach_sanpham li .dong_1{
+    width: 100%;
+    float: left;
+    height: 50px;
+}
+#than_trang .dong_sanpham .danhsach_sanpham li .dong_2{
+    width: 100%;
+    float: left;
+    height: 40px;
+}
+
+#than_trang .dong_sanpham .danhsach_sanpham li .dong_2 .tra_gop{
+        width: 66px;
+    float: left;
+    background: url(../../images/web/icondesktop@1x.v201712120926.png) -68px -31px;
+    height: 28px;
+    margin: 0px 5px 10px 33px;
+}
+
+#than_trang .dong_sanpham .danhsach_sanpham li .khuyen_mai{
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+
+
+#cuoi_trang{
+    width: 100%;
+}
+
+#cuoi_trang .dong_1{
+    width: 100%;
+    min-height: 150px;
+    background-color: #273896;
+    float: left;
+}
+
+#cuoi_trang .dong_2{
+    width: 100%;
+    min-height: 100px;
+    background-color: #FFF;
+    float: left;
+}
+
+#cuoi_trang .dong_3{
+    width: 100%;
+    min-height: 30px;
+    background-color: #F0161F;
+    float: left;
+}
+
+#cuoi_trang .dong_4{
+    width: 100%;
+    min-height: 100px;
+    background-color: #FFF;
+    float: left;
+}
+
+#cuoi_trang .dong_5{
+    width: 100%;
+    min-height: 30px;
+    background-color: #DBDBDB;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

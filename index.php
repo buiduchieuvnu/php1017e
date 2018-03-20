@@ -3,7 +3,6 @@ session_start();
 error_reporting(E_ALL & ~E_NOTICE);
 ini_set('default_charset', 'UTF-8');
 // Định nghĩa các hằng số hệ thống
-define('AREA','C'); // Định nghĩa vùng truy cập dành cho Admin
 define('INDEX','index.php'); // Định nghĩa tên file đang request
 $php_value = phpversion();
 if (version_compare($php_value, '5.2.0') == -1) {
@@ -12,7 +11,7 @@ if (version_compare($php_value, '5.2.0') == -1) {
 }
 require dirname(__FILE__) . '/init.php'; // file chứa các định nghĩa thông số cơ bản
 
-// Chạy module chính
-//System::dispatch("trangchu",false);
-System::dispatch("main",true);
+// Chạy app chính
+System::dispatch("trangchu",false);
+//System::dispatch("main",true);
 ?>

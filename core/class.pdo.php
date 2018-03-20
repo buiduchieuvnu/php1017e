@@ -1,7 +1,5 @@
 <?php
-if ( !defined('AREA') ) {
-    die('Access denied');
-}
+//if ( !defined('AREA') ) {die('Access denied');}
 /**
  * @started 2014-11-27
  * @by: HieuBD

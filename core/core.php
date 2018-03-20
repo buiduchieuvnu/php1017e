@@ -1,5 +1,5 @@
 <?php
-if ( !defined('AREA') ) { die('Access denied'); }
+//if ( !defined('AREA') ) { die('Access denied'); }
 /*
 Tải các thư viện mã nguồn trong thư mục core
 */

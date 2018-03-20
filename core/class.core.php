@@ -1,5 +1,5 @@
 <?php
-if ( !defined('AREA') ) { die('Access denied'); }
+//if ( !defined('AREA') ) { die('Access denied'); }
 
 /**
  * Start 2014-11-16
