@@ -103,9 +103,9 @@ if (!defined('AREA')) {
                 </ul>
                 <?php
                 /* load block */
-                if (!empty($_SESSION["auth"]["id_user"])) {
+                if (!empty($_SESSION["auth"]["tai_khoan"])) {
                     $db = new Database();
-                    $this->loaduser = $db->getValue('users', "*", array("id_user" => $_SESSION["auth"]["id_user"]));
+                    $this->loaduser = $db->getValue('users', "*", array("id_user" => $_SESSION["auth"]["tai_khoan"]));
                 } else {
                     header("Location: ?app=auth");
                 }

@@ -23,13 +23,14 @@ class User extends TNUSObject{
          */
 	public static function login($id_user,$remember=false){
 		$db=new Database();
-		$user=$db->getRow("users", "*", array('id_user' => array($id_user)));
-		$group=$db->getValue("user_group", "id_group", array('id_user' => array($id_user)));
+		$user=$db->getRow("tai_khoan", "*", array('tai_khoan' => array($id_user)));
+		//$group=$db->getValue("user_group", "id_group", array('id_user' => array($id_user)));
 		$_SESSION["auth"]=array();
 		foreach($user AS $k=>$v){
 			$_SESSION["auth"]["$k"]=$v;
 		}
-		$_SESSION["auth"]["group"]=empty($group)?array(0):$group;
+                //print_r($_SESSION);
+		//$_SESSION["auth"]["group"]=empty($group)?array(0):$group;
 	}
 
 	/**

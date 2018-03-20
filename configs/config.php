@@ -16,8 +16,8 @@ define("DB_TYPE","mysql");// Loại CSDL ex: mysql, sqlserver, oracle, vv..
 define("DB_HOSTNAME","127.0.0.1");
 define("DB_USERNAME","root");
 define("DB_PASSWORD","");
-define("DB_DATABSE","db_sms");
-define("DB_TABLE_PREFIX","tnus_");
+define("DB_DATABSE","itp_trananh");
+define("DB_TABLE_PREFIX","ht_");
 // Định nghĩa URL
 define("HTTP_HOST","http://127.0.0.1/projects/");
 define("HTTP_PATH","");

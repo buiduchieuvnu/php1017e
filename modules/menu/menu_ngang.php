@@ -63,7 +63,7 @@
                 </ul>
             </li>
             <?php 
-                if($_SESSION["auth"]["username"]=='admin'){
+                if($_SESSION["auth"]["tai_khoan"]=='admin'){
             ?>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> 
@@ -96,9 +96,9 @@
         </ul>
         <?php
         /* load block */
-        if (!empty($_SESSION["auth"]["id_user"])) {
+        if (!empty($_SESSION["auth"]["tai_khoan"])) {
             $db = new Database();
-            $this->loaduser = $db->getValue('users', "*", array("id_user" => $_SESSION["auth"]["id_user"]));
+            $this->loaduser = $db->getValue('tai_khoan', "*", array("tai_khoan" => $_SESSION["auth"]["tai_khoan"]));
         } else {
             header("Location: ?app=auth");
         }
@@ -106,7 +106,7 @@
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                    <i class="glyphicon glyphicon-user"></i> <?php echo $this->loaduser['username']; ?> <span class="caret"></span></a>
+                    <i class="glyphicon glyphicon-user"></i> <?php echo $this->loaduser['tai_khoan']; ?> <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                     <li><a href="#"><i class="glyphicon glyphicon-cog"></i> Settings</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-lock"></i> Change password</a></li>

@@ -26,7 +26,7 @@ class CategoryApp extends AppObject {
 
     public function __construct() {
 
-        if(empty($_SESSION["auth"]["id_user"])) {
+        if(empty($_SESSION["auth"]["tai_khoan"])) {
             header("Location: ".INDEX); /* Redirect browser */
             exit;
         }

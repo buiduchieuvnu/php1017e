@@ -22,7 +22,7 @@ class System extends TNUSObject{
 		$app=null;
 
                 // truy cập vào vùng yêu cầu đăng nhập nhưng User chưa đăng nhập
-		if($is_auth==true && empty($_SESSION["auth"]["id_user"])){
+		if($is_auth==true && empty($_SESSION["auth"]["tai_khoan"])){
 			// Chuyển tới App đăng nhập
 			$app="auth";
 		}

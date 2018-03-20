@@ -16,7 +16,7 @@ Class AuthApp extends AppObject {
     }
     public function display() {
 
-        if(!empty($_SESSION["auth"]["id_user"])) {
+        if(!empty($_SESSION["auth"]["tai_khoan"])) {
             // Đã đăng nhập rồi
             header("Location: ".INDEX); /* Redirect browser */
             exit;
@@ -29,7 +29,7 @@ Class AuthApp extends AppObject {
     }
     public function login() {
         // kiểm tra nếu đã đăng nhập rồi thì redirect
-        if(!empty($_SESSION["auth"]["id_user"])) {
+        if(!empty($_SESSION["auth"]["tai_khoan"])) {
             header("Location: ".INDEX); /* Redirect browser */
             exit;
         }
@@ -45,15 +45,17 @@ Class AuthApp extends AppObject {
         // lấy id của User
         $db=new Database();
         $password=md5($password);
-        $user=$db->getRow("users", "*", array('username' => array($username), 'password' => array($password)), PDO::FETCH_OBJ);
+        $user=$db->getRow("tai_khoan", "*", array('tai_khoan' => array($username), 'mat_khau' => array($password)), PDO::FETCH_OBJ);
         // nếu login lỗi hoặc chưa tồn tại tài khoản
         if($user==false || empty($user)) {
             $this->is_success=false;
             $this->layout="auth";
             parent::display();
         }
+        print_r($user);
+        
         // nếu có tồn tại thì login
-        User::login($user->id_user, $_POST["remember"]);
+        User::login($user->tai_khoan, $_POST["remember"]);
         // login xong quay về URL
         $returl_url=$_REQUEST["return_url"];
         if(empty($returl_url))
@@ -74,7 +76,7 @@ Class AuthApp extends AppObject {
     }
     public function resetpass() {
 
-        if(empty($_SESSION["auth"]["id_user"])) {
+        if(empty($_SESSION["auth"]["tai_khoan"])) {
             header("Location: ".INDEX); /* Redirect browser */
             exit;
         }
@@ -91,7 +93,7 @@ Class AuthApp extends AppObject {
         $this->layout="default";
         $this->view="resetpass";
         $db=new Database();
-        $this->loaduser=$db->getRow('users',"*","id_user=".$_SESSION["auth"]["id_user"]);
+        $this->loaduser=$db->getRow('users',"*","id_user=".$_SESSION["auth"]["tai_khoan"]);
 
         if(!empty($_REQUEST["name"])&&!empty($_REQUEST["pass"])) {
 
