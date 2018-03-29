@@ -22,6 +22,9 @@
                         <a href="?app=dm_hang">Danh mục hàng hóa</a>
                     </li>
                     <li>
+                        <a href="?app=san_pham">DM Sản phẩm</a>
+                    </li>
+                    <li>
                         <a href="danhmuc_ncc.html">Danh mục nhà cung cấp</a>
                     </li>
                     <li>
@@ -42,9 +45,7 @@
             <li>
                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> QL bán hàng<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
-                    <li>
-                        <a href="danhmuc_hanghoa.html">Danh mục sản phẩm</a>
-                    </li>
+                    
                     <li>
                         <a href="danhmuc_ncc.html">Đơn đặt hàng</a>
                     </li>
