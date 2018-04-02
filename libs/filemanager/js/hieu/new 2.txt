@@ -1,0 +1,7 @@
+http://blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js 
+http://blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js
+http://blueimp.github.io/JavaScript-Templates/js/tmpl.min.js
+http://feather.aviary.com/imaging/v3/
+
+http://feather.aviary.com/csdk/4.3.1.35/js/feathercontrols_en.js
+http://feather.aviary.com/csdk/4.3.1.35/css/feather_theme_aviary_light.css
