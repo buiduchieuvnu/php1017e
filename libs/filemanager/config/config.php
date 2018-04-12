@@ -78,7 +78,7 @@ $config = array(
 	| with start and final /
 	|
 	*/
-	'upload_dir' => $base_url.'/media/upload_cahd/',
+	'upload_dir' => $base_url.'/upload/',
 	/*
 	|--------------------------------------------------------------------------
 	| relative path from filemanager folder to upload folder
@@ -87,7 +87,7 @@ $config = array(
 	| with final /
 	|
 	*/
-	'current_path' => '../../media/upload_cahd/',
+	'current_path' => '../../upload/',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -98,7 +98,7 @@ $config = array(
 	| DO NOT put inside upload folder
 	|
 	*/
-	'thumbs_base_path' => '../../media/thumbs/',
+	'thumbs_base_path' => '../../upload/',
 
 
 	/*
