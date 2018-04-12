@@ -32,6 +32,13 @@
         <div class="form-group col-xs-3">
             <label>Hình ảnh <span class="text-warning">(*)</span>: </label>
             <img src="upload/images/sanpham/tivi_1.png" width="150" id="imgHinhAnh" />
+            <span class="input-group-addon"><a href="#" id="lnkDownload2" target="_blank"><i class="icon-file-download2"></i></a></span>
+                <input type="text" class="form-control input-xs" id="txtFileDinhKem2" readonly="readonly" placeholder="Chọn file 2..." />
+                <span class="input-group-addon">
+                    <a href="javascript:openFileDinhKem(2)">
+                        <i class="icon-folder-upload2"></i>
+                    </a>
+                </span>
         </div>
 
         <div class="form-group col-xs-3">
@@ -56,17 +63,27 @@
                 <option value="3">Đặt trước</option>
             </select>
         </div>
-        <div class="form-group col-xs-4">
-            <label>Mô tả ngắn <span class="text-warning">(*)</span>: </label>
-            <textarea id="txtMoTaNgan" cols="60" rows="5"></textarea>
-        </div>
-        <div class="form-group col-xs-4">
-            <label>Mô tả chi tiết <span class="text-warning">(*)</span>: </label>
-            <textarea id="txtMoTaChiTiet" cols="60" rows="5"></textarea>
-        </div>
-        <div class="form-group col-xs-4">
-            <label>Thuộc tính <span class="text-warning">(*)</span>: </label>
-            <textarea id="txtThuocTinh" cols="60" rows="5"></textarea>
+        <div class="col-xs-12">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#tabMoTa" aria-controls="thuoc" role="tab" data-toggle="tab" aria-expanded="false">Mô tả ngắn</a></li>
+                <li role="presentation"><a href="#tabChiTiet" aria-controls="thuthuat" role="tab" data-toggle="tab" aria-expanded="true">Chi tiết</a></li>
+                <li role="presentation"><a href="#tabThuocTinh" aria-controls="thuthuat" role="tab" data-toggle="tab" aria-expanded="true">Thuộc tính</a></li>
+            </ul>
+            <div class="tab-content" style="border: 1px solid #ddd;padding:5px;">
+                    <div role="tabpanel" class="tab-pane active" id="tabMoTa">
+                        <label>Mô tả ngắn <span class="text-warning">(*)</span>: </label>
+                        <textarea id="txtMoTaNgan" cols="60" rows="5"></textarea>
+                        
+                    </div>                    
+                    <div role="tabpanel" class="tab-pane" id="tabChiTiet">
+                        <label>Mô tả chi tiết <span class="text-warning">(*)</span>: </label>
+                        <textarea id="txtMoTaChiTiet" cols="60" rows="5"></textarea>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tabThuocTinh">
+                        <label>Thuộc tính <span class="text-warning">(*)</span>: </label>
+                        <textarea id="txtThuocTinh" cols="60" rows="5"></textarea>
+                    </div>
+                </div>
         </div>
     </div>
     <div class="well row" id="ACTIONS">
@@ -74,9 +91,49 @@
         <button type="button" class="btn btn-danger" id="CLOSE"><i class="icon icon-eject"></i> Đóng </button>
     </div>
 </div>
+<div id="roxyCustomPanel" style="display: none;">
+    <iframe id="CvFileMan" src="/Libs/fileman/index.html?integration=custom&txtFieldId=txtFileDinhKem" style="width: 100%; height: 100%" frameborder="0"></iframe>
+</div>
+
+<!--Tiny MCE-->
+<script type="text/javascript" src="<?= AppObject::getBaseFile('libs/tinymce/jquery.tinymce.min.js') ?>"></script>
+<script type="text/javascript" src="<?= AppObject::getBaseFile('libs/tinymce/tinymce.min.js') ?>"></script>
 
 <!-- App objects -->
 <script type="text/javascript">
+    
+    function open_popup(url) {
+        var w = 700;
+        var h = 500;
+        var l = Math.floor((screen.width - w) / 2);
+        var t = Math.floor((screen.height - h) / 2);
+        var win = window.open(url, 'ResponsiveFilemanager', "scrollbars=1,width=" + w + ",height=" + h + ",top=" + t + ",left=" + l);
+    }
+
+    function responsive_filemanager_callback(field_id) {
+        console.log(field_id);
+        var url = jQuery('#' + field_id).val();
+        alert('update ' + field_id + " with " + url);
+        //your code
+    }
+    
+    function Page_init(){
+        tinymce.init({
+            selector: '#txtMoTaNgan,#txtMoTaChiTiet,#txtThuocTinh',
+            plugins: [
+                "advlist autolink link image lists charmap print preview hr anchor pagebreak",
+                "searchreplace wordcount visualblocks visualchars insertdatetime media nonbreaking",
+                "table contextmenu directionality emoticons paste textcolor responsivefilemanager code"
+            ],
+            toolbar1: "undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | styleselect",
+            toolbar2: "| responsivefilemanager | link unlink anchor | image media | forecolor backcolor  | print preview code ",
+            image_advtab: true,
+
+            external_filemanager_path: "<?= AppObject::getBaseFile('libs/filemanager/') ?>",
+            filemanager_title: "Responsive Filemanager",
+            external_plugins: {"filemanager": "filemanager/plugin.min.js"}
+        });
+    }
 
     function DmHang_bind(){
         var _gui = {};
@@ -158,6 +215,7 @@
 
 
     (function () {
+        Page_init();
         DmHang_bind();
         DmNcc_bind();
         DmThuongHieu_bind();
