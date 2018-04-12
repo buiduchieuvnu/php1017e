@@ -86,7 +86,7 @@
                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Quản trị hệ thống<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="danhmuc_hanghoa.html">QL Tài khoản</a>
+                        <a href="?app=ht_tai_khoan">QL Tài khoản</a>
                     </li>
                     <li>
                         <a href="danhmuc_hanghoa.html">QL Sao lưu - khôi phục</a>
