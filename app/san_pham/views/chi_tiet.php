@@ -130,7 +130,7 @@
             image_advtab: true,
 
             external_filemanager_path: "<?= AppObject::getBaseFile('libs/filemanager/') ?>",
-            filemanager_title: "Responsive Filemanager",
+            filemanager_title: "Quản lý file",
             external_plugins: {"filemanager": "filemanager/plugin.min.js"}
         });
     }
