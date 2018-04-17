@@ -462,7 +462,7 @@ a{
 
 #than_trang .dong_sanpham .danhsach_sanpham li .logo_hangsx{
     max-height: 30px;
-    margin: 10px 10px 10px 5px;
+    margin: 0px 10px 0px 5px;
     float: left;
 }
 
@@ -506,7 +506,7 @@ a{
 }
 
 #than_trang .dong_sanpham .danhsach_sanpham li .khuyen_mai{
-    width: 100%;
+    width: 50%;
     float: left;
     padding: 10px;
 }
